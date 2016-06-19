@@ -1,0 +1,17 @@
+[{
+	"name": "name 1",
+	"count": 12,
+	"price": 12123343.25
+}, {
+	"name": "name 2",
+	"count": 60,
+	"price": 80800.25
+}, {
+	"name": "name 3",
+	"count": 120,
+	"price": 33562.25
+}, {
+	"name": "name 4",
+	"count": 20,
+	"price": 459.25
+}]

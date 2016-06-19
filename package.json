@@ -1,0 +1,28 @@
+{
+  "name": "test-sort-table",
+  "version": "1.0.0",
+  "description": "Sort table for anyone products (items)",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CubiZm/Test-sort-table.git"
+  },
+  "author": "Lena Karyakina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CubiZm/Test-sort-table/issues"
+  },
+  "homepage": "https://github.com/CubiZm/Test-sort-table",
+  "dependencies": {
+    "gulp": "3.9.x",
+    "gulp-plumber": "1.0.x",
+    "eclint": "1.1.x",
+    "fs-extra": "0.26.x"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0"
+  }
+}
