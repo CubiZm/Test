@@ -12,9 +12,10 @@ define(function() {
         var template = document.getElementById('template');
         var newElement = template.querySelector('.template-tbody');
         var parent = document.querySelector('.tbody');
-        var removeBtn = document.querySelector('.load-btn');
+        var loadBtn = document.querySelector('.load-btn');
+        var editBtn = document.querySelector('.edit');
 
-        removeBtn.classList.add('invisible');
+        loadBtn.classList.add('invisible');
 
         if ('content' in template) {
           newElement = template.content.querySelector('.template-tbody');
@@ -32,6 +33,7 @@ define(function() {
         element.querySelector('.template-price').textContent = priceItem;
         parent.appendChild(element);
 
+        //editBtn.addEventListener('click', setEdit);
       });
     };
 
