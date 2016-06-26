@@ -3,6 +3,7 @@
 define(function() {
 
   function getEdit() {
+    
     console.log('edit');
   }
 

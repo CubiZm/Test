@@ -1,21 +1,21 @@
 'use strict';
 
-define(['./edit'], function(getEdit) {
+define(function() {
 
-  function setAdd() {
-    var template = document.querySelector('#template');
-    var inputName = document.querySelector('.template-name');
-    var inputCount = document.querySelector('.template-count');
-    var inputPrice = document.querySelector('.template-price');
+  function createElement() {
+    var arr = [];
+    var nameValue = document.querySelector('.add-name').value;
+    var countValue = document.querySelector('.add-count').value;
+    var priceValue = document.querySelector('.add-price').value;
 
-    var nameValue = inputName.value;
-    var countValue = inputCount.value;
-    var priceValue = inputPrice.value;
-
-    console.log(nameValue);
-    var editBtn = document.querySelector('.edit');
-    editBtn.addEventListener('click', getEdit);
+    var newObjectElements = {};
+    newObjectElements.name = nameValue;
+    newObjectElements.count = countValue;
+    newObjectElements.price = priceValue;
+    arr.push(newObjectElements);
+    console.log(arr);
   }
 
-  return setAdd;
+
+  return createElement;
 });
