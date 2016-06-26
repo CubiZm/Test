@@ -1,9 +1,8 @@
 'use strict';
 
-define(function() {
+define(['./add-to-array'], function(add) {
 
   function createElement() {
-    var arr = [];
     var nameValue = document.querySelector('.add-name').value;
     var countValue = document.querySelector('.add-count').value;
     var priceValue = document.querySelector('.add-price').value;
@@ -12,10 +11,8 @@ define(function() {
     newObjectElements.name = nameValue;
     newObjectElements.count = countValue;
     newObjectElements.price = priceValue;
-    arr.push(newObjectElements);
-    console.log(arr);
+    //console.log(newObjectElements);
+    add();
   }
-
-
   return createElement;
 });
