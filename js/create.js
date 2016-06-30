@@ -13,6 +13,7 @@ define(['./add-to-array'], function(add) {
     newObjectElements.price = priceValue;
     //console.log(newObjectElements);
     add();
+    return newObjectElements;
   }
   return createElement;
 });
