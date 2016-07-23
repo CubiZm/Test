@@ -11,8 +11,8 @@ define(['./add-to-array'], function(add) {
     newObjectElements.name = nameValue;
     newObjectElements.count = countValue;
     newObjectElements.price = priceValue;
-    //console.log(newObjectElements);
-    add();
+    console.log(newObjectElements);
+    //add();
     return newObjectElements;
   }
   return createElement;
