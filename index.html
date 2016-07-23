@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+  <link rel="stylesheet" href="/css/main.css"charset="utf-8">
+  <title>Sort table</title>
+</head>
+<body>
+  <div class="table-container">
+    <table class="table">
+      <tr class='table-row'>
+        <th class='table-item name'>Name</th>
+        <th class='table-item count'>Count</th>
+        <th class='table-item price'>Price</th>
+        <th class='table-item actions'>Actions</th>
+      </tr>
+    </table>
+    <table class="template-table">
+      <tr class='tbody'>
+      <template id="template">
+        <!-- <tr class='tbody'> -->
+        <tr class="template-tbody">
+          <th class='template-name template-item'></th>
+          <th class='template-count template-item'></th>
+          <th class='template-price template-item'></th>
+          <th class='template-actions template-item'>
+            <button class="template-btn edit">Edit</button>
+            <button class="template-btn delete">Delete</button>
+          </th>
+      </tr>
+      </template>
+      </tr>
+      <tr class="add-new-item"></tr>
+    </table>
+
+    <div class="add-container">
+      <div name='add-form'>
+        <input class='add-name' type="text" placeholder="name" />
+        <input class='add-count' type="number" placeholder="count" value='0' />
+        <input class='add-price' type="number" value='0'/>
+        <button class='add-btn'>add</button>
+      </div>
+    </div>
+    <button class='load-btn'>Load Items</button>
+  </div>
+  <script data-main="js/main" src="js/require.js"></script>
+</body>
+</html>
